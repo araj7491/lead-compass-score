@@ -27,10 +27,17 @@ const CreateLeadForm = () => {
 
   const createLead = useMutation({
     mutationFn: async (data: LeadFormData) => {
-      // Fix: Pass a single object instead of an array to match Supabase's expected format
+      // We need to ensure data has required fields for Supabase
+      const leadData = {
+        name: data.name,
+        email: data.email,
+        company: data.company || null,
+        status: data.status || 'new'
+      };
+      
       const { data: result, error } = await supabase
         .from('leads')
-        .insert(data) // Remove the array wrapping
+        .insert(leadData)
         .select();
       
       if (error) throw error;
