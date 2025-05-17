@@ -1,5 +1,5 @@
 # Lead Compass Score
-DEMO- https://lead-compass-score.lovable.app/
+DEMO- https://lead-compass-score.vercel.app/
 **Lead Compass Score** is a web-based application that helps sales and marketing teams analyze the quality of leads based on key input criteria. The system uses a scoring algorithm to rank leads, enabling businesses to prioritize high-quality prospects and enhance conversion rates.
 
 ## 🚀 Features
