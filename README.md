@@ -1,73 +1,85 @@
-# Welcome to your Lovable project
+# Lead Compass Score
+DEMO- https://lead-compass-score.lovable.app/
+**Lead Compass Score** is a web-based application that helps sales and marketing teams analyze the quality of leads based on key input criteria. The system uses a scoring algorithm to rank leads, enabling businesses to prioritize high-quality prospects and enhance conversion rates.
 
-## Project info
+## 🚀 Features
 
-**URL**: https://lead-compass-score.lovable.app/
+- ✅ Lead scoring based on industry, job title, company size, and other key inputs  
+- 📊 Visual representation of lead score  
+- 💼 Designed for marketing and sales professionals  
+- 🧠 Simple, intuitive UI for quick interaction  
+- 🔧 Easily extendable for additional lead parameters  
 
-## How can I edit this code?
+## 🖥️ Tech Stack
 
-There are several ways of editing your application.
+- **Frontend:** HTML, CSS, JavaScript  
+- **Backend:** Node.js, Express.js  
+- **Database:** None (static scoring logic)  
+- **Deployment:** Localhost (can be deployed on platforms like Vercel, Netlify, or Render)  
 
-**Use Lovable**
+## 📂 Project Structure
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/be6cc494-3d8b-4ab6-9878-5a32a417c7ca) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+```
+lead-compass-score/
+│
+├── public/               # Static assets (CSS, JS)
+│   ├── css/
+│   └── js/
+│
+├── views/                # HTML templates
+│   └── index.html
+│
+├── app.js                # Express server
+├── package.json
+└── README.md
 ```
 
-**Edit a file directly in GitHub**
+## ⚙️ Installation
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/araj7491/lead-compass-score.git
+   cd lead-compass-score
+   ```
 
-**Use GitHub Codespaces**
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+3. **Run the server**
+   ```bash
+   node app.js
+   ```
 
-## What technologies are used for this project?
+4. **Visit the app**
+   Open your browser and go to `http://localhost:3000`
 
-This project is built with:
+## 🧮 How Lead Scoring Works
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+The score is calculated using a predefined formula, considering:
+- **Industry relevance**
+- **Job title impact**
+- **Company size**
+- **Lead source**
 
-## How can I deploy this project?
+You can modify the scoring logic in `app.js` to suit your business requirements.
 
-Simply open [Lovable](https://lovable.dev/projects/be6cc494-3d8b-4ab6-9878-5a32a417c7ca) and click on Share -> Publish.
+## 📸 Screenshots
 
-## Can I connect a custom domain to my Lovable project?
+> Add a screenshot or GIF here showing the application interface and how lead scoring is displayed.
 
-Yes, you can!
+## 🛠️ Future Improvements
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+- Add database support for persistent lead data  
+- User authentication for saved sessions  
+- Advanced analytics and export to CSV  
+- Mobile-responsive UI  
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+## 🙌 Contributing
+
+Pull requests are welcome! For major changes, please open an issue first to discuss what you would like to change.
+
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).
