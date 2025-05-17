@@ -2,7 +2,7 @@
 
 ## Project info
 
-**URL**: https://lovable.dev/projects/be6cc494-3d8b-4ab6-9878-5a32a417c7ca
+**URL**: https://lead-compass-score.lovable.app/
 
 ## How can I edit this code?
 
